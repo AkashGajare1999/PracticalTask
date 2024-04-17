@@ -1,0 +1,20 @@
+{
+  "User": [
+    {
+      "avtar": "Capture.PNG",
+      "name": "akash gajaree",
+      "email": "akashgajare1999@gmail.com",
+      "dob": "1999-05-05",
+      "countryNameSelected": "India",
+      "id": 1
+    },
+    {
+      "avtar": "heartsAngry.png",
+      "name": "sfsdfdsf",
+      "email": "akashgajare19979@gmail.com",
+      "dob": "2011-10-12",
+      "countryNameSelected": "USA",
+      "id": 2
+    }
+  ]
+}

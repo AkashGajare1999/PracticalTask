@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import 'ngx-toastr/toastr';
+body
+{
+    background: url(/assets/images/bg-intro-desktop.png) ;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .example-events {
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #555;
+  }

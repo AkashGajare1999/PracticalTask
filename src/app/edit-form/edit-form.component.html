@@ -1,0 +1,45 @@
+
+<div class="container">
+    <button type="button" class="btn btn-light" routerLink="/AllMatchesComponent">Back to main</button>
+    <h2 class="text-center"><b>Person Information Form</b></h2>
+   <div class="card mt-3 p-4">
+  <div class="modal-body">
+    <form [formGroup]="EditpersonForm">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="image-wrapper user-img text-center">
+            <label for="file-input" class="m-auto">
+                <img src="{{UserImageDisplay}}" alt="" class="rounded-circle" style="cursor: pointer; width: 200px; border: 1px solid #ced4da;
+                height: 200px; margin: 0 auto;"> 
+            </label>
+            <input id="file-input" type="file" style="display: none;" (change)="changeImage($event)" accept="image/*" />                   
+          </div>
+        </div>
+        <div class="col-lg-6">
+     <label>Name</label>
+     <input type="text" class="form-control" placeholder="Enter Name" formControlName="name">
+    </div>
+    <div class="col-lg-6">
+      <label>Email</label>
+      <input type="email" class="form-control" placeholder="Enter Email" formControlName="email">
+     </div>
+     <div class="col-lg-6">
+      <label>Date of Birth</label>
+      <input type="date" class="form-control" formControlName="dob">
+     </div>
+     <div class="col-lg-6">
+      <label>Country</label>
+      <select class="form-select" formControlName="countryNameSelected">
+        <option selected>Choose Country</option>
+        <option *ngFor="let countryname of country" value="{{countryname.name}}">{{countryname.name}}</option>
+      </select>
+     </div>
+    </div>
+    </form>
+  </div>
+  <div class="text-right" style="text-align: right;">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="EditpersonForm.reset()">Reset</button>
+    <button type="button" class="btn btn-primary ms-3" (click)="Save()">Update</button>
+  </div>
+</div>
+</div>

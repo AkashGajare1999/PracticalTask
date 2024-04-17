@@ -1,0 +1,12 @@
+<div class="card mt-3 p-4" >
+    <img [src]="'./assets/img/' + person.avtar" class="avatar" alt="Avatar">
+    <div class="container">
+      <h4 (click)="editFormFRedirection(person.id)" style="cursor: pointer;"><b>{{ person.name }}</b></h4>
+      <p>Email: {{ person.email }}</p>
+      <p>Age: {{ person.dob | age }}</p>
+      <button class="btn btn-danger"  (click)="deleteFormData(person.id)">Delete Record</button>
+
+    </div>
+  </div>
+
+  
